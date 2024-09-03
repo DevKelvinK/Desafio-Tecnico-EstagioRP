@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
 
+  max-width: 600px;
   padding: 2rem;
   border: 2px solid;
   border-radius: 1rem;
@@ -125,49 +126,31 @@ body {
 
 /* Exercício 4 */
 
-/* .ex4 p {
-  text-align: center;
-
-  margin-bottom: 1rem;
+.ex4 ul {
+  list-style: none;
 }
 
-.ex4 table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  border: 2px solid ;
-
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+.ex4 ul li {
+  margin-bottom: .25rem;
 }
 
-.ex4 thead {
-  background-color: rgb(255, 29, 29);
-  color: var(--neutral);
+.ex4 ul li:last-child {
+  margin: 0;
 }
 
-.ex4 thead th:nth-of-type(1) {
-  width: 100px;
+.ex4 .res {
+  padding-inline: .25rem;
+  border-bottom: 1px solid var(--primary);
 }
 
-.ex4 thead th:nth-of-type(2) {
-  width: 100px;
+/* Exercício 5 */
+
+.ex5 p {
+  margin-bottom: .5rem;
 }
 
-.ex4 thead th:nth-of-type(3) {
-  width: 100px;
-}
-
-.ex4 tbody td:nth-of-type(2) {
-  font-weight: bold;
+.ex5 p:last-child {
+  margin: 0;
 
   color: var(--primary);
 }
-
-.ex4 th,
-.ex4 td {
-  text-align: center;
-
-  border: 1px solid var(--secondary);
-  padding: 8px 10px;
-}
- */

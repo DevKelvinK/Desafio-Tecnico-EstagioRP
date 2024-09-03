@@ -7,8 +7,6 @@ const resEx1 = document.querySelector("#resEx1");
 submitNum.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  num = parseFloat(inputNum.value);
-
   let nA = 0;
   let nB = 1;
   let nC = 0;
@@ -23,6 +21,8 @@ submitNum.addEventListener("submit", (e) => {
     nA = nB;
     nB = nC;
   }
+
+  const  num = parseFloat(inputNum.value);
 
   let pertence = arraySequenciaF.includes(num);
 
@@ -87,7 +87,7 @@ for (var c = 0; c < 4; c++) {
   rA += 2
 }
 
-console.log(`A- ${rA}`)
+document.querySelector('#resEx4A').innerHTML = rA /* rA = 9 */
 
 // b)
 let rB = 2
@@ -96,8 +96,7 @@ for (var c = 0; c < 6; c++) {
   rB *= 2
 }
 
-console.log("")
-console.log(`B- ${rB}`)
+document.querySelector('#resEx4B').innerHTML = rB /* rB = 128 */
 
 // c)
 let rC = 0
@@ -106,8 +105,7 @@ for (var c = 0; c < 8; c++) {
   rC = c ** 2
 }
 
-console.log("")
-console.log(`C- ${rC}`)
+document.querySelector('#resEx4C').innerHTML = rC /* rC = 49 */
 
 // d)
 let rD = 4
@@ -121,24 +119,25 @@ for (var c = 0; c < 4; c++) {
   rDInicial = rD
 }
 
-console.log("")
-console.log(`D- ${rD}`)
+document.querySelector('#resEx4D').innerHTML = rD /* rD = 100 */
 
 // e)
-let nA = 0;
-let nB = 1;
-let nC = 0;
+let numA = 0;
+let numB = 1;
+let numC = 0;
 
 for (let c = 0; c < 6; c++) {
-  nC = nA + nB;
+  numC = numA + numB;
   
-  nA = nB;
-  nB = nC;
+  numA = numB;
+  numB = numC;
+  rE = numC;
 }
 
-console.log("")
-console.log(`E- ${nC}`)
+document.querySelector('#resEx4E').innerHTML = rE /* rE = 13 */
 
+// f)
 
+/* rF = 200
 
-// Continuar para responder questão 5
+A sequência são de numeros que começam com a letra "D", não achei uma lógica matemática para fazer no código kkk */
